@@ -1,0 +1,110 @@
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    background-color: #f0f0f0;
+    padding-top: 40px; /* Sesuaikan dengan tinggi navbar */
+  }
+  .navbar-nav .nav-link, .navbar-brand {
+    color: black !important;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  /* Tambahkan kode CSS berikut */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #a3d8ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  .nav-link:hover {
+    color: #a3d8ff !important;
+  }
+  .navbar-brand {
+    color: #196499 !important;
+  }
+  section {
+    min-height: 100vh;
+    padding: 60px 0;
+    position: relative;
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+/* ... style lainnya ... */
+
+.card-body ul li {
+  margin-bottom: 0.75rem;
+}
+
+.card-body ul li:last-child {
+  margin-bottom: 0;
+}
+
+.card-body ul li strong {
+  display: block;
+  margin-bottom: 0.1rem; /* Mengurangi jarak */
+}
+
+.card-body ul li small {
+  font-size: 0.85rem;
+  line-height: 1.2; /* Menambahkan line-height untuk merapatkan teks */
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+ /* Tambahkan ini di bagian <head> atau file CSS terpisah */
+ .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  /* Footer Styles */
+footer {
+    color: var(--bs-body-color);
+}
+
+footer a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--bs-primary);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+footer hr {
+    opacity: 0.1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    animation: fadeIn 1s ease-in-out;
+}
