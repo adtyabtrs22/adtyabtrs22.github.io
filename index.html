@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
@@ -9,246 +9,459 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="logo.png" type="image/png"> <!-- Tambahkan ikon di sini -->
-    <title>Portofolio Aditya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
-      <div class="container">
-        <img src="logo.png" alt="logo" class="img-fluid rounded me-2" style="width: 40px; height: 40px; object-fit: cover;">
-        <a class="navbar-brand fs-5" href="index.html">Aditya</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link text-dark hover-underline-animation" href="#home">Home</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark hover-underline-animation" href="#about">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark hover-underline-animation" href="#projects">Proyek</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark hover-underline-animation" href="#contact">Kontak</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <span>Aditya</span>
+        </a>
       </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-talk">
+          <span>Let's Talk</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+
     <main>
-      <section id="home" class="container mt-4 text-center">
-        <img src="dit.png" alt="Foto Aditya" class="img-fluid rounded mb-3" style="width: 300px; height: 300px; object-fit: cover;">
-        <h1>Welcome To My Portofolio</h1>
-        <p>Saya Aditya, Mahasiswa Program Studi Sistem Informasi Institut Teknologi Kalimantan</p>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="pulse"></span>
+              <span>Available for Work</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="line">Aditya</span>
+              <span class="line accent">ButarButar</span>
+            </h1>
+            <p class="hero-subtitle">
+              Information Systems Student & Web Developer
+            </p>
+            <p class="hero-description">
+              Passionate about creating digital experiences and exploring the
+              world of technology at Institut Teknologi Kalimantan.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                <span>View Projects</span>
+                <i class="bi bi-arrow-down-right"></i>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <div class="image-frame">
+                <img src="dit.png" alt="Aditya Laksamana" />
+              </div>
+              <div class="floating-card card-1">
+                <i class="bi bi-code-slash"></i>
+                <span>Web Dev</span>
+              </div>
+              <div class="floating-card card-2">
+                <i class="bi bi-mortarboard"></i>
+                <span>ITK 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-footer">
+          <div class="social-links">
+            <span class="label">SOCIALS</span>
+            <div class="links">
+              <a
+                href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a href="https://github.com/adtyabtrs22" target="_blank"
+                >GitHub</a
+              >
+              <a href="https://web.facebook.com/aditya.butar" target="_blank"
+                >Facebook</a
+              >
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+          </div>
+          <div class="contact-quick">
+            <span class="label">EMAIL</span>
+            <a href="mailto:10231006@student.itk.ac.id"
+              >10231006@student.itk.ac.id</a
+            >
+          </div>
+        </div>
       </section>
-      <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-      <section id="about" class="container">
-        <h2 class="text-center mb-4">Tentang Saya</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Pendidikan</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <strong>SMK Negeri 1 Tanah Grogot</strong>
-                    <small class="text-muted">Jurusan Rekayasa Perangkat Lunak</small>
-                    <small class="text-muted d-block">Tanah Grogot, Kabupaten Paser, Kalimantan Timur</small>
-                    <small class="text-muted">2020 - 2023</small>
-                  </li>
-                  <li>
-                    <strong>Institut Teknologi Kalimantan</strong>
-                    <small class="text-muted">Program Studi Sistem Informasi</small>
-                    <small class="text-muted d-block">Balikpapan, Kalimantan Timur</small>
-                    <small class="text-muted">2023 - sekarang</small>
-                  </li>
-                </ul>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-intro">
+            <p class="big-text">
+              I'm a passionate
+              <span class="highlight">Information Systems</span> student with a
+              keen interest in web development and technology.
+            </p>
+          </div>
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="card-header">
+                <span class="card-icon"><i class="bi bi-book"></i></span>
+                <h3>Education</h3>
+              </div>
+              <div class="card-content">
+                <div class="edu-item">
+                  <span class="year">2023 - Now</span>
+                  <h4>Institut Teknologi Kalimantan</h4>
+                  <p>Information Systems</p>
+                  <span class="location"
+                    ><i class="bi bi-geo-alt"></i> Balikpapan</span
+                  >
+                </div>
+                <div class="edu-item">
+                  <span class="year">2020 - 2023</span>
+                  <h4>SMKN 1 Tanah Grogot</h4>
+                  <p>Software Engineering</p>
+                  <span class="location"
+                    ><i class="bi bi-geo-alt"></i> Paser, Kaltim</span
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Keahlian</h5>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-secondary me-2"></i>Kolaborasi antar tim</li>
-                  <li><i class="bi bi-check-circle-fill text-secondary me-2"></i>Mampu beradaptasi dengan lingkungan baru</li>
-                  <li><i class="bi bi-check-circle-fill text-secondary me-2"></i>Manajemen waktu</li>
-                  <li><i class="bi bi-check-circle-fill text-secondary me-2"></i>Menguasai Google Workspace dan Microsoft Office</li>
-                  <li><i class="bi bi-check-circle-fill text-secondary me-2"></i>Masih belajar menguasai bahasa pemograman seperti HTML, CSS, JavaScript, Python, dan PHP</li>
-                </ul>
+            <div class="about-card">
+              <div class="card-header">
+                <span class="card-icon"><i class="bi bi-lightning"></i></span>
+                <h3>Skills</h3>
+              </div>
+              <div class="card-content">
+                <div class="skills-grid">
+                  <span class="skill-tag">HTML</span>
+                  <span class="skill-tag">CSS</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">PHP</span>
+                  <span class="skill-tag">Google Workspace</span>
+                  <span class="skill-tag">MS Office</span>
+                  <span class="skill-tag">Teamwork</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Pengalaman</h5>
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <strong>ITK Open House 2024 Prodi Sistem Informasi</strong>
-                    <small class="text-muted">Divisi Acara, SubDiv Video Profile 2024</small>
-                  </li>
-                  <li class="mb-3">
-                    <strong>Dialogue and Gallery Information System/DIARY-IS 2024</strong>
-                    <small class="text-muted">Divisi Perkamjin 2024</small>
-                  </li>
-                  <li class="mb-3">
-                    <strong>Information System Path to Creativity/INSPACE 2024</strong>
-                    <small class="text-muted">Divisi Perkamjin 2024</small>
-                  </li>
-                  <li class="mb-3">
-                    <strong>Himpunan Mahasiswa Sistem Informasi Kabinet Synergia</strong>
-                    <small class="text-muted">Staff Magang Departemen Minat Bakat 2024</small>
-                  </li>
-                  <li>
-                    <strong>Himpunan Mahasiswa Sistem Informasi Kabinet Istanava</strong>
-                    <small class="text-muted">Staff Departemen Minat Bakat 2024</small>
-                  </li>
-                </ul>
+            <div class="about-card full-width">
+              <div class="card-header">
+                <span class="card-icon"><i class="bi bi-briefcase"></i></span>
+                <h3>Experience</h3>
+              </div>
+              <div class="card-content">
+                <div class="exp-grid">
+                  <div class="exp-item">
+                    <span class="exp-year">2024</span>
+                    <h4>HMSI Kabinet Istanava</h4>
+                    <p>Staff Dept. Minat Bakat</p>
+                  </div>
+                  <div class="exp-item">
+                    <span class="exp-year">2024</span>
+                    <h4>HMSI Kabinet Synergia</h4>
+                    <p>Staff Magang Dept. Minat Bakat</p>
+                  </div>
+                  <div class="exp-item">
+                    <span class="exp-year">2024</span>
+                    <h4>ITK Open House</h4>
+                    <p>SubDiv Video Profile</p>
+                  </div>
+                  <div class="exp-item">
+                    <span class="exp-year">2024</span>
+                    <h4>DIARY-IS & INSPACE</h4>
+                    <p>Divisi Perkamjin</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-      <section id="projects" class="container">
-        <h2 class="text-center mb-4">Proyek</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <img src="smartdoc.png" class="card-img-top" alt="Smartdoc">
-              <div class="card-body">
-                <h5 class="card-title">Lomba Web Dev IDN IT Fest</h5>
-                <p class="card-text">Membuat Website Smartdoc (Website Konsultasi Dokter) untuk Semifinal 2022 Online IT Competition.</p>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="smartdoc.png" alt="Smartdoc" />
+              <div class="project-overlay">
+                <span class="project-tag">Web Development</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <img src="alpro.jpg" class="card-img-top" alt="Aplikasi Laundry">
-              <div class="card-body">
-                <h5 class="card-title">Aplikasi Pengelolaan Laundry</h5>
-                <p class="card-text">Tugas Akhir Mata Kuliah Algoritma Pemrograman. Membuat program Aplikasi "Pengelolaan Laundry" dengan bahasa Pemrograman Python. 2023</p>
+            <div class="project-info">
+              <span class="project-year">2022</span>
+              <h3>Smartdoc Website</h3>
+              <p>
+                Medical consultation website created for IDN IT Fest Web
+                Development Competition Semifinal.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card h-100">
-              <img src="kik.jpg" class="card-img-top" alt="Internet Sehat">
-              <div class="card-body">
-                <h5 class="card-title">Sosialisasi "Internet Sehat"</h5>
-                <p class="card-text">Tugas Akhir Mata Kuliah Kemampuan Interpesonal dan Kepemimpinan. Melakukan kegiatan Sosialisasi dengan tema "Internet Sehat" pada siswa SMKN 3 Balikpapan. 2023</p>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="alpro.jpg" alt="Laundry App" />
+              <div class="project-overlay">
+                <span class="project-tag">Python</span>
               </div>
+            </div>
+            <div class="project-info">
+              <span class="project-year">2023</span>
+              <h3>Laundry Management App</h3>
+              <p>
+                Final project for Algorithm Programming course - A comprehensive
+                laundry management system.
+              </p>
+              <div class="project-tech">
+                <span>Python</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="kik.jpg" alt="Internet Sehat" />
+              <div class="project-overlay">
+                <span class="project-tag">Community Service</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-year">2023</span>
+              <h3>Internet Sehat Campaign</h3>
+              <p>
+                Socialization activity about healthy internet usage for SMKN 3
+                Balikpapan students.
+              </p>
+              <div class="project-tech">
+                <span>Public Speaking</span>
+                <span>Education</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-header">
+            <span class="section-number">03</span>
+            <h2 class="contact-title">
+              Let's Work<br /><span class="accent">Together</span>
+            </h2>
+            <p class="contact-subtitle">
+              Have a project in mind or just want to say hello? Feel free to
+              reach out!
+            </p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="info-item">
+                <span class="info-label">EMAIL</span>
+                <a href="mailto:10231006@student.itk.ac.id" class="info-value"
+                  >10231006@student.itk.ac.id</a
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-label">PHONE</span>
+                <a href="tel:+6285751530226" class="info-value"
+                  >+62 857 5153 0226</a
+                >
+              </div>
+              <div class="info-item">
+                <span class="info-label">LINKEDIN</span>
+                <a
+                  href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b"
+                  target="_blank"
+                  class="info-value"
+                  >Aditya Laksamana P BB</a
+                >
+              </div>
+              <div class="contact-socials">
+                <a
+                  href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b"
+                  target="_blank"
+                  class="social-btn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/adtyabtrs22"
+                  target="_blank"
+                  class="social-btn"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://web.facebook.com/aditya.butar"
+                  target="_blank"
+                  class="social-btn"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+            <div class="contact-form-wrapper">
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="contact-form"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="497a7fa1-bc92-4c0e-b48c-848dc60aa71f"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Pesan Baru dari Portfolio Website"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://web3forms.com/success"
+                />
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-submit" id="submit-button">
+                  <span>Send Message</span>
+                  <i class="bi bi-send"></i>
+                  <div id="loading" class="spinner" style="display: none"></div>
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
-<div class="wave-divider">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
-        <div class="contact-overlay">
-          <section id="contact" class="container text-center">
-            <h2 class="mb-4">Kontak</h2>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <form name="submit-to-google-sheet">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" id="name" name="nama" placeholder="Nama" required>
-                  </div>
-                  <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                  </div>
-                  <div class="mb-3">
-                    <textarea class="form-control" id="message" name="pesan" rows="4" placeholder="Pesan" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary" id="submit-button">
-                    Kirim Pesan
-                    <div id="loading" class="spinner-border spinner-border-sm text-light ms-2" role="status" style="display: none;">
-                      <span class="visually-hidden">Mengirim...</span>
-                    </div>
-                  </button>
-                </form>
-              </div>
-              <div class="col-md-6 mb-3">
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Email</h5>
-                    <p class="card-text">10231006@student.itk.ac.id</p>
-                  </div>
-                </div>
-                <div class="card mb-3">
-                  <div class="card-body">
-                    <h5 class="card-title">Telepon</h5>
-                    <p class="card-text">+62 857 5153 0226</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">LinkedIn</h5>
-                    <a href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b" class="card-text" target="_blank">linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <span>Aditya</span>
+          </div>
+          <p>Information Systems Student at Institut Teknologi Kalimantan</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <span class="link-label">LINKS</span>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="link-group">
+            <span class="link-label">SOCIALS</span>
+            <a
+              href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/adtyabtrs22" target="_blank">GitHub</a>
+            <a href="https://web.facebook.com/aditya.butar" target="_blank"
+              >Facebook</a
+            >
+          </div>
         </div>
       </div>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-body-tertiary py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
-            <h5>Tautan Cepat</h5>
-            <ul class="list-unstyled">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Tentang</a></li>
-              <li><a href="#projects">Proyek</a></li>
-              <li><a href="#contact">Kontak</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Ikuti Saya</h5>
-            <div class="social-icons">
-              <a href="https://web.facebook.com/aditya.butar" class="me-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.linkedin.com/in/aditya-laksamana-p-butar-butar-62b12a31b" class="me-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/adtyabtrs22" class="me-2" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-        <hr class="my-4">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start">
-            <p>&copy; 2024 Aditya Laksamana P Butar Butar. Hak Cipta Dilindungi.</p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <p>Kebijakan Privasi | Syarat dan Ketentuan</p> 
-          </div>
-        </div>
+      <div class="footer-bottom">
+        <p>©2024 All Rights Reserved</p>
+        <p>Designed & Built by Aditya</p>
       </div>
     </footer>
 
@@ -259,39 +472,122 @@
     ></script>
 
     <script>
-      document.querySelectorAll('.navbar-nav a').forEach(anchor => { // Pilih semua elemen <a> di dalam .navbar-nav
-        anchor.addEventListener('click', function(e) { // Tambahkan event listener untuk setiap tautan
-          e.preventDefault(); // Cegah perilaku default dari tautan
-          const sectionId = this.getAttribute('href').substring(1); // Ambil ID dari bagian yang dituju, hapus karakter #
-          document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'}); // Scroll halus ke bagian yang dituju
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+            // Close mobile menu if open
+            document.getElementById("mobileMenu").classList.remove("active");
+            document.getElementById("navToggle").classList.remove("active");
+          }
         });
       });
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzgQWFxSX7rZ6z2MSNavDI7485mbok29dRAgo-9lFtNRP_5DIAWgBPs0wu8bvGYUz0W/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const loading = document.getElementById('loading')
-      const submitButton = document.getElementById('submit-button')
+      // Mobile menu toggle
+      const navToggle = document.getElementById("navToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        loading.style.display = 'inline-block' // Tampilkan indikator loading
-        submitButton.disabled = true // Nonaktifkan tombol submit
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            console.log('Success!', response)
-            alert('Pesan berhasil dikirim!')
-            form.reset() // Reset form
-            loading.style.display = 'none' // Sembunyikan indikator loading
-            submitButton.disabled = false // Aktifkan kembali tombol submit
-          })
-          .catch(error => {
-            console.error('Error!', error.message)
-            alert('Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.')
-            loading.style.display = 'none' // Sembunyikan indikator loading
-            submitButton.disabled = false // Aktifkan kembali tombol submit
-          })
-      })
+      navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector(".nav-container");
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Active link on scroll
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      // Form submission with FormSpree
+      const form = document.querySelector(".contact-form");
+      const loading = document.getElementById("loading");
+      const submitButton = document.getElementById("submit-button");
+
+      if (form) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          // Show loading state
+          loading.style.display = "inline-block";
+          submitButton.disabled = true;
+          submitButton.style.opacity = "0.7";
+
+          try {
+            // Send form data to FormSpree
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              // Success message
+              alert(
+                "✅ Pesan berhasil dikirim ke email! Terima kasih telah menghubungi saya.",
+              );
+              form.reset();
+            } else {
+              throw new Error("Network response was not ok");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert(
+              "❌ Terjadi kesalahan saat mengirim pesan. Silakan coba lagi atau hubungi saya melalui email langsung.",
+            );
+          } finally {
+            // Reset button state
+            loading.style.display = "none";
+            submitButton.disabled = false;
+            submitButton.style.opacity = "1";
+          }
+        });
+      }
+
+      // Cursor effect (optional - for desktop)
+      if (window.innerWidth > 768) {
+        const cursor = document.querySelector(".cursor");
+        const follower = document.querySelector(".cursor-follower");
+
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.left = e.clientX + "px";
+          cursor.style.top = e.clientY + "px";
+
+          setTimeout(() => {
+            follower.style.left = e.clientX + "px";
+            follower.style.top = e.clientY + "px";
+          }, 100);
+        });
+      }
     </script>
-
   </body>
 </html>
